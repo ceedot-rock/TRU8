@@ -51,8 +51,15 @@ def tri_to_sum(c0, c1, c2):
 ## License
 
 Public demo only. See [LICENSE](LICENSE).  
-Credit required: **Powered by TRU8 · Slid Phi Labs**  
-Full engine / residual: commercial license — license@slidphilabs.com
+Credit required: **Powered by TRU8 · Slid Phi Labs**
+
+### Commercial license inquiry
+
+Full residual engine, production packer, and Continuous-1088 Strong path are available under commercial license.
+
+**[Request a commercial license →](mailto:license@slidphilabs.com?subject=TRU8%20Commercial%20License%20Inquiry)**
+
+Or email: [license@slidphilabs.com](mailto:license@slidphilabs.com)
 
 ## Brand
 
