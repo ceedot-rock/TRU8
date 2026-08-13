@@ -1,0 +1,19 @@
+[project]
+name = "tru8"
+version = "0.1.0"
+description = "TRU8 — true minimal units for repetition. Public demo by Slid Phi Labs."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Proprietary (public demo)" }
+authors = [{ name = "Slid Phi Labs" }]
+keywords = ["compression", "TRU8", "tru8"]
+
+[project.scripts]
+tru8 = "tru8.__main__:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["tru8*"]
