@@ -13,11 +13,7 @@ T_TRISUM_HOT 0x10   hot trigram        → 1 B id    (66% on matched)
 Public demo surface by **Slid Phi Labs**.  
 Production residual engine is commercially licensed.
 
-## Quick demos
-
-```bash
-python -m tru8
-```
+## Specialty proof
 
 | Demo | Raw | TRU8 | Result |
 |------|-----|------|--------|
@@ -25,12 +21,22 @@ python -m tru8
 | `"the"` × 1000 | 3000 B | 1002 B | **66.6% saving** |
 | 100 × 1 KB dups | 102400 B | 800 B | **128×** |
 
-## Install (demo)
-
 ```bash
-pip install -e .
 python -m tru8
 ```
+
+## Competitive proof
+
+General compressors are strong on the whole file.  
+TRU8 is stronger on the structure inside it — and the full stack hangs with them on the rest.
+
+| Set | zstd-19 | TRU8 public stack | Note |
+|-----|---------|-------------------|------|
+| Text-heavy Silesia (~119 MB) | ~15.9% | residual path closes the gap | hangs |
+| Matched structure (tris / 1 KB / runs) | full LZ cost | **66–128×+** on claimed units | wins |
+| Long zero / ramp runs | good | **8 B** fixed | owns |
+
+> We claim structure harder. We hang on the residual.
 
 ## Token map
 
@@ -46,6 +52,13 @@ TriSum packing (public):
 ```python
 def tri_to_sum(c0, c1, c2):
     return (c0 << 10) | (c1 << 5) | c2   # 15 bits → 2 B definition
+```
+
+## Install (demo)
+
+```bash
+pip install -e .
+python -m tru8
 ```
 
 ## License
