@@ -3,10 +3,16 @@ from .zero import ZeroBox
 from .dict_box import DictBox
 from .trisum import TrisumBox
 from .residual import ResidualBox, NotLicensed
-from .container import write_tru8, read_tru8, EXTENSION, MODE_ZERO, MODE_DICT, MODE_TRISUM, MODE_CHAMBER
+from .container import (
+    write_truw, write_truc, write_trunk, read_archive,
+    EXT_TRUW, EXT_TRUC, EXT_TRUNK,
+    MODE_ZERO, MODE_DICT, MODE_TRISUM, MODE_CHAMBER,
+    MAGIC_TRUW, MAGIC_TRUC, MAGIC_TRUNK,
+)
 
 __all__ = [
     "ZeroBox", "DictBox", "TrisumBox", "ResidualBox", "NotLicensed",
-    "write_tru8", "read_tru8", "EXTENSION",
+    "write_truw", "write_truc", "write_trunk", "read_archive",
+    "EXT_TRUW", "EXT_TRUC", "EXT_TRUNK",
     "MODE_ZERO", "MODE_DICT", "MODE_TRISUM", "MODE_CHAMBER",
 ]
