@@ -22,6 +22,14 @@ Production residual engine is commercially licensed.
 | 100 × 1 KB dups | 102400 B | 800 B | **128×** |
 
 ```bash
+npm i @cptasz13/tru8
+npx @cptasz13/tru8
+```
+
+Python:
+
+```bash
+pip install -e .
 python -m tru8
 ```
 
@@ -70,9 +78,9 @@ Credit required: **Powered by TRU8 · Slid Phi Labs**
 
 Full residual engine, production packer, and Continuous-1088 Strong path are available under commercial license.
 
-**[Request a commercial license →](mailto:license@slidphilabs.com?subject=TRU8%20Commercial%20License%20Inquiry)**
+**[Request a commercial license →](mailto:corey@slidphilabs.com?subject=TRU8%20Commercial%20License%20Inquiry)**
 
-Or email: [license@slidphilabs.com](mailto:license@slidphilabs.com)
+Or email: [corey@slidphilabs.com](mailto:corey@slidphilabs.com)
 
 ## Brand
 
