@@ -33,6 +33,21 @@ pip install -e .
 python -m tru8
 ```
 
+## MCP (public demos)
+
+Agent-facing MCP server for the same public tokens:
+
+```bash
+pip install "mcp[cli]"
+python3 mcp/server.py          # self-test
+uv run mcp dev mcp/server.py   # Inspector
+```
+
+Tools: `demo_zeros` · `demo_trisum` · `demo_dict` · `token_map`  
+Details: [mcp/README.md](mcp/README.md)
+
+Related public MCP: [json-chamber-mcp](https://github.com/ceedot-rock/json-chamber-mcp) (Chamber seal/open — no TRU8 engine).
+
 ## Competitive proof
 
 General compressors are strong on the whole file.  
